@@ -4,8 +4,26 @@ html{
 }
 
 
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size:1em;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+
+
+.container{
+
+	max-width: 1200px;
+	width:90%;
+}
+
 /*****center content for flexbox *****/
-body,
+
 .container,
 header,
 .top-section,
@@ -19,17 +37,7 @@ flex-flow:row wrap;
 
 }
 
-body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size:1em;
-	
-}
 
-.container{
-	max-width: 1200px;
-	width:90%;
-	margin: 0 auto;
-}
 
 h1,
 h2,
@@ -51,65 +59,60 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 1.3125em;
-    padding: 0 30px;
+}
+
+ul {
+	margin:0;
 }
 
 /*The widths are in a percentage!*/
 header {
-	/*height: 110px;  removed fixed height */
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	text-align:center;
+	width:100%;
+
 }
 
 header h1 {
-	/*float: left; removed floats to create flexbox model*/
+
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 20px 20px 20px;
+	border-bottom:3px solid #77a466;
+	width:100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	/*float: right; removed floats to create flexbox model*/
-	padding: 46px 0;
+	padding: 20px 0;
+	width:100%;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	
+	
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 0;
+	list-style:none;
+	
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
 
-/*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
-	margin: 0 auto;
-	/*clear: both; removed clear for flexboxmodel */
-}
-
-.main-image {
-	height: auto;
-	/*float: left; float removed for flexbox model*/
-}
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 4px solid #77a466;
+	
 }
 
-.main-title {
-	height: auto;
-	/*float: left; float removed for flexbox model*/
-}
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
@@ -124,24 +127,9 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
-	/*float: left; removed float for flexbox model */
+	
 	border-top: 1px solid #eee;
-}
-
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 10px 30px;
+	width:100%;
 }
 
 .menu {
@@ -166,12 +154,12 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	/*height: 50px; removed fix heights for flexbox */
+	
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	/*clear: both; removed clear for flexbox model */
 	text-align: center;
+	width:100%;
 }
+
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
